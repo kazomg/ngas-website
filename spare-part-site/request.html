@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Request a Part — NGAS</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333; background-color: #333;}
+    header { background:#000105; color:#fff; padding:20px; text-align:center; font-size:70px; font-weight:bold; position:relative; }
+    #google_translate_element { position: absolute; top: 10px; right: 10px; z-index: 999; }
+    nav { background:#fff; padding:12px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);  height: 50px;}
+    nav a { margin:0 15px; text-decoration:none; color:#02050e; font-weight:bold; }
+    .form-container { max-width:1000px; height: 900px; margin:40px auto; background:#fff; padding:25px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+    .form-container h2 { color:#00030a; margin-top:0; }
+    label { display:block; margin-top:15px; font-weight:bold; }
+    input, textarea { width:100%; padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:5px; }
+    button { margin-top:20px; background:#01040c; color:#fff; padding:12px 18px; border:none; border-radius:6px; cursor:pointer; }
+    button:hover { background:#c93ec9; }
+    footer { background:#000207; color:#fff; text-align:center; padding:20px; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  NICK’S GLOBAL AUTO SERVICES (NGAS)
+  <div id="google_translate_element"></div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="request.html">Request a Part</a>
+</nav>
+
+<div class="form-container">
+  <h2>Request a Spare Part</h2>
+  <form action="send_request.php" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="vehicle">Vehicle Make / Model</label>
+    <input type="text" id="vehicle" name="vehicle">
+
+    <label for="partdesc">Part Name / Description</label>
+    <textarea id="partdesc" name="partdesc" rows="4" required></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</div>
+<!-- Google Translate -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<footer>
+  Contact Us: +1(326)209_3913 <br> Email: nicksgarage01@gmail.com <br>Location: USA 
+  <br> © 2025 NICK’S GLOBAL AUTO SERVICES
+</footer>
+</body>
+</html>
